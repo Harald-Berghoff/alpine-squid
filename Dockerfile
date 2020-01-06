@@ -4,7 +4,7 @@ FROM alpine
 #Install squid and clean the cache in the same step
 
 RUN apk add squid && \
-    rm -rf /var/cache/apk/* && 
+    rm -rf /var/cache/apk/* 
 
 # This will use port 631
 EXPOSE 3128/tcp
